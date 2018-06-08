@@ -150,13 +150,48 @@ The ground truth comparison of each state for Dataset 1 are as plotted below:
 
 **Consistency check**
 
-Normalized Innovation Squared (NIS) is used to verify the consistency of our UKF, so that we do not over or underestimate the uncertainty of the system.
+Normalized Innovation Squared (NIS) is used to verify the consistency of our UKF, so that we do not over or underestimate the uncertainty of the system. The NIS outlier for lidar and radar are 2.8% and 3.6% respectively, which are close to expected 5%.
 
-|        | NIS Outlier (95%) |
+|        | NIS Outlier (5%) |
 | ------:|--------------:|
 | Lidar  | 2.8% |
 | Radar  | 3.6% |
 
-<img src="/images/nis_lidar.png" width="300">
-<img src="/images/nis_radar.png" width="300">
+<img src="/images/nis_lidar.png" width="500">
+<img src="/images/nis_radar.png" width="500">
 
+---
+
+### Installation
+
+1. Download the Udacity Self Driving Car Nanodegree simulator from [here](https://github.com/udacity/self-driving-car-sim/releases).
+
+2. Set up and install [uWebSocketIO](https://github.com/uWebSockets/uWebSockets) by running the shell script in the project top directory:
+
+```
+$ install-ubuntu.sh
+```
+
+**Other Important Dependencies**
+
+* cmake >= 3.5
+* make >= 4.1
+* gcc/g++ >= 5.4
+
+---
+
+### How to run
+
+The main program can be built and run by doing the following from the project top directory.
+
+1. mkdir build
+
+2. cd build
+
+3. cmake ..
+
+4. make
+
+5. ./ExtendedKF
+
+Open the simulator, select `Project 1/2: EFK and UKF` and press `Start`.
