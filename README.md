@@ -81,11 +81,21 @@ Note: number of sigma points, ![](https://latex.codecogs.com/gif.latex?n_{\sigma
 
 <img src="/images/Screenshot from 2018-06-08 23-07-49-2.png" width="750">
 
-![](https://latex.codecogs.com/gif.latex?\mathcal{X}_{k+1|k}=f(\mathcal{X}_{a,k|k},\boldsymbol{\nu}_{k}))
+![](https://latex.codecogs.com/gif.latex?\mathcal{X}_{k+1|k}=f(\mathcal{X}_{a,k|k},\boldsymbol{\nu}))
+
+Weights
 
 ![](https://latex.codecogs.com/gif.latex?w_{i}=\frac{\lambda}{\lambda+n_{a}},i=0)
 
 ![](https://latex.codecogs.com/gif.latex?w_{i}=\frac{1}{2(\lambda+n_{a})},i=1...n_{\sigma}-1)
+
+Predicted mean
+
+![](https://latex.codecogs.com/gif.latex?x_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}\mathcal{X}_{k+1|k,i})
+
+Predicted covariance
+
+![](https://latex.codecogs.com/gif.latex?\boldsymbol{P}_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}(\mathcal{X}_{k+1|k,i}-x_{k+1|k})(\mathcal{X}_{k+1|k,i}-x_{k+1|k})^{T})
 
 **Unscented Kalman Filter - Measurement Prediction**
 
@@ -95,17 +105,17 @@ where ![](https://latex.codecogs.com/gif.latex?\boldsymbol{\omega}_{sensor}\sim\
 
 Predicted measurement mean
 
-![](https://latex.codecogs.com/gif.latex?z_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}\mathcal{Z}_{k+1|k})
+![](https://latex.codecogs.com/gif.latex?z_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}\mathcal{Z}_{k+1|k,i})
 
 Predicted measurement covariance
 
-![](https://latex.codecogs.com/gif.latex?\boldsymbol{S}_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}(\mathcal{Z}_{k+1|k}-z_{k+1|k})(\mathcal{Z}_{k+1|k}-z_{k+1|k})^{T}+\boldsymbol{R})
+![](https://latex.codecogs.com/gif.latex?\boldsymbol{S}_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}(\mathcal{Z}_{k+1|k,i}-z_{k+1|k})(\mathcal{Z}_{k+1|k,i}-z_{k+1|k})^{T}+\boldsymbol{R})
 
 **Unscented Kalman Filter - Update**
 
 Cross-correlation matrix
 
-![](https://latex.codecogs.com/gif.latex?\boldsymbol{T}_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}(\mathcal{X}_{k+1|k}-x_{k+1|k})(\mathcal{Z}_{k+1|k}-z_{k+1|k})^{T})
+![](https://latex.codecogs.com/gif.latex?\boldsymbol{T}_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}(\mathcal{X}_{k+1|k,i}-x_{k+1|k})(\mathcal{Z}_{k+1|k,i}-z_{k+1|k})^{T})
 
 Kalman gain
 
