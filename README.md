@@ -29,9 +29,9 @@ Using a CTRV model, the process model is as described below:
 
 where
 
-![](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Bx%7D%3D%5Cbegin%7Bpmatrix%7Dp_%7Bx%7D%26space%3B%5C%5C%26space%3Bp_%7By%7D%26space%3B%5C%5C%26space%3Bv%26space%3B%5C%5C%26space%3B%5Cpsi%26space%3B%5C%5C%26space%3B%5Cdot%7B%5Cpsi%7D%26space%3B%5Cend%7Bpmatrix%7D)
+![](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Bx%7D%3D%5Cbegin%7Bpmatrix%7Dp_%7Bx%7D%5C%5Cp_%7By%7D%5C%5Cv%5C%5C%5Cpsi%5C%5C%5Cdot%7B%5Cpsi%7D%5Cend%7Bpmatrix%7D%22)
 
-![](https://latex.codecogs.com/gif.latex?%5Cmathbf{%5Cnu}=%5Cbegin%7Bpmatrix%7D%5Cnu_%7Ba%7D%26space%3B%5C%5C%26space%3B%5Cnu_%7B%5Cddot%7B%5Cpsi%26space%3B%7D%7D%5Cend%7Bpmatrix%7D)
+![](https://latex.codecogs.com/gif.latex?%5Cmathbf%7B%5Cnu%7D%3D%5Cbegin%7Bpmatrix%7D%5Cnu_%7Ba%7D%5C%5C%5Cnu_%7B%5Cddot%7B%5Cpsi%7D%7D%5Cend%7Bpmatrix%7D)
 
 and
 
