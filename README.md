@@ -65,6 +65,6 @@ The following figure illustrates the rough idea of an unscented transformation:
 
 ![](https://latex.codecogs.com/gif.latex?x_%7Ba%2Ck%7D%3D%5Cbegin%7Bpmatrix%7D%0D%0Ap_%7Bx%7D%5C%5C+%0D%0Ap_%7Bx%7D%5C%5C+%0D%0Av%5C%5C+%0D%0A%5Cpsi+%5C%5C+%0D%0A%5Cdot%7B%5Cpsi+%7D%5C%5C+%0D%0A%5Cnu+_%7Ba%7D%5C%5C+%0D%0A%5Cnu+_%7B%5Cddot%7B%5Cpsi+%7D%7D%0D%0A%5Cend%7Bpmatrix%7D)
 
-![](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BP%7D_%7Ba%2Ck%7Ck%7D%3D%5Cbegin%7Bbmatrix%7D%5Cmathbf%7BP%7D_%7Ba%2Ck%7Ck%7D+%260+%5C%5C0+%26%5Cmathbf%7BQ%7D%5Cend%7Bbmatrix%7D)
+![](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BP%7D_%7Ba%2Ck%7Ck%7D%3D%5Cbegin%7Bbmatrix%7D%5Cmathbf%7BP%7D_%7Ba%2Ck%7Ck%7D%260%5C%5C0%26%5Cmathbf%7BQ%7D%5Cend%7Bbmatrix%7D)
 
 ![](https://latex.codecogs.com/gif.latex?%5Cmathcal%7BX%7D_%7Ba%2Ck%7Ck%7D%3D%5Cbegin%7Bbmatrix%7D%0D%0Ax_%7Ba%2Ck%7Ck%7D+%26x_%7Ba%2Ck%7Ck%7D%2B%5Csqrt%7B%28%5Clambda+%2Bn_%7Ba%7D%29%5Cmathbf%7BP%7D_%7Ba%2Ck%7Ck%7D%29%7D++%26x_%7Ba%2Ck%7Ck%7D-+%5Csqrt%7B%28%5Clambda+%2Bn_%7Ba%7D%29%5Cmathbf%7BP%7D_%7Ba%2Ck%7Ck%7D%29%7D%0D%0A%5Cend%7Bbmatrix%7D)
