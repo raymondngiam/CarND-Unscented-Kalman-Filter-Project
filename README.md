@@ -83,9 +83,9 @@ Note: number of sigma points, ![](https://latex.codecogs.com/gif.latex?n_{\sigma
 
 **Unscented Kalman Filter - Measurement Prediction**
 
-![](https://latex.codecogs.com/gif.latex?\mathcal{Z}_{k+1|k}=h(\mathcal{X}_{k+1|k})+\boldsymbol{\omega})
+![](https://latex.codecogs.com/gif.latex?\mathcal{Z}_{k+1|k}=h(\mathcal{X}_{k+1|k})+\boldsymbol{\omega}_{sensor})
 
-where ![](https://latex.codecogs.com/gif.latex?\omega_{a}\sim\mathcal{N}(0,\boldsymbol{R}))
+where ![](https://latex.codecogs.com/gif.latex?\boldsymbol{\omega}_{sensor}\sim\mathcal{N}(0,\boldsymbol{R}))
 
 Predicted measurement mean
 
