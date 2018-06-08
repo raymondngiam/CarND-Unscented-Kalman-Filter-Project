@@ -80,3 +80,6 @@ where
 <img src="/images/Screenshot from 2018-06-08 23-07-49-2.png" width="750">
 
 **Unscented Kalman Filter - Measurement Prediction**
+
+![](https://latex.codecogs.com/gif.latex?\mathcal{Z}_{k+1|k}=h(\mathcal{X}_{k+1|k})+\mathbf{\omega})
+
