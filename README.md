@@ -75,6 +75,8 @@ where
 
 ![](https://latex.codecogs.com/gif.latex?%5Clambda%3D3-n_%7Ba%7D)
 
+Note: number of sigma points, ![](https://latex.codecogs.com/gif.latex?n_{\sigma}=2n_{a}+1)
+
 **Unscented Kalman Filter - Predicting Sigma Points and Calculating Mean and Covariance**
 
 <img src="/images/Screenshot from 2018-06-08 23-07-49-2.png" width="750">
@@ -82,4 +84,17 @@ where
 **Unscented Kalman Filter - Measurement Prediction**
 
 ![](https://latex.codecogs.com/gif.latex?\mathcal{Z}_{k+1|k}=h(\mathcal{X}_{k+1|k})+\mathbf{\omega})
+
+Predicted measurement mean
+
+![](https://latex.codecogs.com/gif.latex?z_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}\mathcal{Z}_{k+1|k})
+
+Predicted measurement covariance
+
+![](https://latex.codecogs.com/gif.latex?\boldsymbol{S}_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}(\mathcal{Z}_{k+1|k}-z_{k+1|k})(\mathcal{Z}_{k+1|k}-z_{k+1|k})^{T}+\boldsymbol{R})
+
+where 
+
+![](https://latex.codecogs.com/gif.latex?%5Cboldsymbol%7BR%7D%3D%5Cbegin%7Bpmatrix%7D%5Csigma_%7B%5Crho%7D%5E%7B2%7D%260%260%5C%5C0%26%5Csigma_%7B%5Cvarphi%7D%5E%7B2%7D%260%5C%5C0%260%26+%5Csigma_%7B%5Cdot%7B%5Crho%7D%7D%5E%7B2%7D%5Cend%7Bpmatrix%7D)
+
 
