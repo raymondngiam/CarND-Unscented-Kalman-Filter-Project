@@ -127,10 +127,17 @@ Covariance matrix update
 
 ![](https://latex.codecogs.com/gif.latex?\boldsymbol{P}_{k+1|k+1}=\boldsymbol{P}_{k+1|k}-\boldsymbol{K}_{k+1|k}\boldsymbol{S}_{k+1|k}\boldsymbol{K}_{k+1|k}^{T})
 
+---
 
+### Result
 
+The final RMSE value achieved for Dataset 1 in the simulator is as follows:
 
-
-
+|        | RMSE   |
+| ------:|-------:|
+| x      | 0.0596 |
+| y      | 0.0872 |
+| vx	 | 0.3343 |
+| vy	 | 0.2210 |
 
 
