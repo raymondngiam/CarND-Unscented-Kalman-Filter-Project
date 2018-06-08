@@ -83,9 +83,9 @@ Note: number of sigma points, ![](https://latex.codecogs.com/gif.latex?n_{\sigma
 
 ![](https://latex.codecogs.com/gif.latex?\mathcal{X}_{k+1|k}=f(\mathcal{X}_{a,k|k},\boldsymbol{\nu}_{k}))
 
-![](https://latex.codecogs.com/gif.latex?w_{i}=\frac{\lambda}{\lambda+n_{a}}) for ![](https://latex.codecogs.com/gif.latex?i=0)
+![](https://latex.codecogs.com/gif.latex?w_{i}=\frac{\lambda}{\lambda+n_{a}},i=0)
 
-![](https://latex.codecogs.com/gif.latex?w_{i}=\frac{1}{2(\lambda+n_{a}})) for ![](https://latex.codecogs.com/gif.latex?i=1...n_{\sigma-1})
+![](https://latex.codecogs.com/gif.latex?w_{i}=\frac{1}{2(\lambda+n_{a})},i=1...n_{\sigma}-1)
 
 **Unscented Kalman Filter - Measurement Prediction**
 
