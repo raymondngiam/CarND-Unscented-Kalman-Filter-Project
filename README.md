@@ -21,6 +21,6 @@ Lidar measurements are red circles, radar measurements are blue circles with an 
 
 Using a CTRV model, the process model is as described below:
 
-![](https://latex.codecogs.com/gif.latex?\mathbf{x%27}=\begin{pmatrix}p_{x}%27&space;\\&space;p_{y}%27&space;\\&space;v%27&space;\\&space;\psi&space;%27&space;\\&space;\dot{\psi}%27&space;\end{pmatrix}&space;=&space;\begin{pmatrix}p_{x}&space;\\&space;p_{y}&space;\\&space;v&space;\\&space;\psi&space;\\&space;\dot{\psi}&space;\end{pmatrix}&space;&plus;&space;\begin{pmatrix}\frac{v}{\dot{\psi}}(sin(\psi&plus;\dot{\psi}\Delta&space;t)-sin(\psi))&space;\\&space;\frac{v}{\dot{\psi}}(-cos(\psi&plus;\dot{\psi}\Delta&space;t)&plus;cos(\psi))&space;\\&space;0&space;\\&space;\psi\Delta&space;t&space;\\&space;0&space;\end{pmatrix}&space;&plus;&space;\begin{pmatrix}0.5(\Delta&space;t)^{2}cos(\psi)\cdot&space;\nu&space;_{a}&space;\\&space;0.5(\Delta&space;t)^{2}sin(\psi)\cdot&space;\nu&space;_{a}&space;\\&space;\Delta&space;t&space;\cdot&space;\nu&space;_{a}&space;\\&space;0.5(\Delta&space;t)^{2}\cdot&space;\nu&space;_{\ddot{\psi}}&space;\\&space;\Delta&space;t&space;\cdot&space;\nu&space;_{\ddot{\psi}}&space;\end{pmatrix})
+![](http://mathurl.com/y7u5nzww)
 
 
