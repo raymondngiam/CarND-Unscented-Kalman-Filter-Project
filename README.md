@@ -85,6 +85,8 @@ Note: number of sigma points, ![](https://latex.codecogs.com/gif.latex?n_{\sigma
 
 ![](https://latex.codecogs.com/gif.latex?\mathcal{Z}_{k+1|k}=h(\mathcal{X}_{k+1|k})+\boldsymbol{\omega})
 
+where ![](https://latex.codecogs.com/gif.latex?\omega_{a}\sim\mathcal{N}(0,\boldsymbol{R}))
+
 Predicted measurement mean
 
 ![](https://latex.codecogs.com/gif.latex?z_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}\mathcal{Z}_{k+1|k})
@@ -95,6 +97,5 @@ Predicted measurement covariance
 
 where 
 
-![](https://latex.codecogs.com/gif.latex?%5Cboldsymbol%7BR%7D%3D%5Cbegin%7Bpmatrix%7D%5Csigma_%7B%5Crho%7D%5E%7B2%7D%260%260%5C%5C0%26%5Csigma_%7B%5Cvarphi%7D%5E%7B2%7D%260%5C%5C0%260%26%5Csigma_%7B%5Cdot%7B%5Crho%7D%7D%5E%7B2%7D%5Cend%7Bpmatrix%7D)
 
 
