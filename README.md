@@ -79,8 +79,6 @@ Note: number of sigma points, ![](https://latex.codecogs.com/gif.latex?n_{\sigma
 
 **Unscented Kalman Filter - Predicting Sigma Points and Calculating Mean and Covariance**
 
-<img src="/images/Screenshot from 2018-06-08 23-07-49-2.png" width="750">
-
 ![](https://latex.codecogs.com/gif.latex?\mathcal{X}_{k+1|k}=f(\mathcal{X}_{a,k|k},\boldsymbol{\nu}))
 
 Weights
