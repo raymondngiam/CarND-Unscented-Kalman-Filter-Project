@@ -22,6 +22,7 @@ Lidar measurements are red circles, radar measurements are blue circles with an 
 A CTRV motion model is depicted in the diagram below:
 
 ![CTRV Motion Model](/images/screenshot-from-2017-02-27-20-45-49.png | width=100)
+<CTRV Motion Model src="/images/screenshot-from-2017-02-27-20-45-49.png" width="100">
 
 Using a CTRV model, the process model is as described below:
 
