@@ -59,7 +59,7 @@ When dealing with nonlinear process or measurement models, the extended Kalman f
 
 The following figure illustrates the rough idea of an unscented transformation:
 
-
+<img src="/images/Screenshot from 2018-06-08 22-04-35-2.png" width="500">
 
 **Unscented Kalman Filter - Augmentation and Sigma Point Generation**
 
@@ -74,3 +74,9 @@ The following figure illustrates the rough idea of an unscented transformation:
 where
 
 ![](https://latex.codecogs.com/gif.latex?%5Clambda%3D3-n_%7Ba%7D)
+
+**Unscented Kalman Filter - Predicting Sigma Points and Calculating Mean and Covariance**
+
+<img src="/images/Screenshot from 2018-06-08 23-07-49.png" width="500">
+
+**Unscented Kalman Filter - Measurement Prediction**
