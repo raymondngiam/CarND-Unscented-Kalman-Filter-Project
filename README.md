@@ -131,6 +131,10 @@ Covariance matrix update
 
 ### Result
 
+The process noise parameters ![](https://latex.codecogs.com/gif.latex?\sigma_{a}) and ![](https://latex.codecogs.com/gif.latex?\sigma_{\ddot{\psi}}) are both set to 1.0.
+
+**RMS Error**
+
 The final RMSE value achieved for Dataset 1 in the simulator is as follows:
 
 |        | RMSE   |
@@ -140,4 +144,19 @@ The final RMSE value achieved for Dataset 1 in the simulator is as follows:
 | vx	 | 0.3343 |
 | vy	 | 0.2210 |
 
+The ground truth comparison of each state for Dataset 1 are as plotted below:
+
+<img src="/images/states.png" width="750">
+
+**Consistency check**
+
+Normalized Innovation Squared (NIS) is used to verify the consistency of our UKF, so that we do not over or underestimate the uncertainty of the system.
+
+|        | NIS Outlier (95%) |
+| ------:|--------------:|
+| Lidar  | 2.8% |
+| Radar  | 3.6% |
+
+<img src="/images/nis_lidar.png" width="300">
+<img src="/images/nis_radar.png" width="300">
 
