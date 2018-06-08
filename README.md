@@ -77,6 +77,6 @@ where
 
 **Unscented Kalman Filter - Predicting Sigma Points and Calculating Mean and Covariance**
 
-<img src="/images/Screenshot from 2018-06-08 23-07-49.png" width="750">
+<img src="/images/Screenshot from 2018-06-08 23-07-49-2.png" width="750">
 
 **Unscented Kalman Filter - Measurement Prediction**
