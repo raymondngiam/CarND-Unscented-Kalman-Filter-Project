@@ -25,13 +25,13 @@ A CTRV motion model is depicted in the diagram below:
 
 Using a CTRV model, the process model is as described below:
 
-![](https://latex.codecogs.com/gif.latex?\mathbf{x'}=f(\mathbf{x},\mathbf{\nu}))
+![](https://latex.codecogs.com/gif.latex?\boldsymbol{x'}=f(\boldsymbol{x},\boldsymbol{\nu}))
 
-where ![](https://latex.codecogs.com/gif.latex?\mathbf{x}) is the state vector and ![](https://latex.codecogs.com/gif.latex?\mathbf{\nu}) is the process noise vector.
+where ![](https://latex.codecogs.com/gif.latex?\boldsymbol{x}) is the state vector and ![](https://latex.codecogs.com/gif.latex?\boldsymbol{\nu}) is the process noise vector.
 
-![](https://latex.codecogs.com/gif.latex?%5Cmathbf%7Bx%7D%3D%5Cbegin%7Bpmatrix%7Dp_%7Bx%7D%5C%5Cp_%7By%7D%5C%5Cv%5C%5C%5Cpsi%5C%5C%5Cdot%7B%5Cpsi%7D%5Cend%7Bpmatrix%7D)
+![](https://latex.codecogs.com/gif.latex?%5Cboldsymbol%7Bx%7D%3D%5Cbegin%7Bpmatrix%7Dp_%7Bx%7D%5C%5Cp_%7By%7D%5C%5Cv%5C%5C%5Cpsi%5C%5C%5Cdot%7B%5Cpsi%7D%5Cend%7Bpmatrix%7D)
 
-![](https://latex.codecogs.com/gif.latex?%5Cmathbf%7B%5Cnu%7D%3D%5Cbegin%7Bpmatrix%7D%5Cnu_%7Ba%7D%5C%5C%5Cnu_%7B%5Cddot%7B%5Cpsi%7D%7D%5Cend%7Bpmatrix%7D)
+![](https://latex.codecogs.com/gif.latex?%5Cboldsymbol%7B%5Cnu%7D%3D%5Cbegin%7Bpmatrix%7D%5Cnu_%7Ba%7D%5C%5C%5Cnu_%7B%5Cddot%7B%5Cpsi%7D%7D%5Cend%7Bpmatrix%7D)
 
 ![](https://latex.codecogs.com/gif.latex?\nu_{a}) is the longitudinal acceleration noise, and is normally distributed with mean zero and variance ![](https://latex.codecogs.com/gif.latex?\sigma_{a}^{2})
 
@@ -67,9 +67,9 @@ The following figure illustrates the rough idea of an unscented transformation:
 
 ![](https://latex.codecogs.com/gif.latex?x_%7Ba%2Ck%7D%3D%5Cbegin%7Bpmatrix%7D%0D%0Ap_%7Bx%7D%5C%5C%0D%0Ap_%7Bx%7D%5C%5C%0D%0Av%5C%5C%0D%0A%5Cpsi%5C%5C%0D%0A%5Cdot%7B%5Cpsi%7D%5C%5C%0D%0A%5Cnu_%7Ba%7D%5C%5C%0D%0A%5Cnu_%7B%5Cddot%7B%5Cpsi%7D%7D%0D%0A%5Cend%7Bpmatrix%7D)
 
-![](https://latex.codecogs.com/gif.latex?%5Cmathbf%7BP%7D_%7Ba%2Ck%7Ck%7D%3D%5Cbegin%7Bbmatrix%7D%5Cmathbf%7BP%7D_%7Ba%2Ck%7Ck%7D%260%5C%5C0%26%5Cmathbf%7BQ%7D%5Cend%7Bbmatrix%7D)
+![](https://latex.codecogs.com/gif.latex?%5Cboldsymbol%7BP%7D_%7Ba%2Ck%7Ck%7D%3D%5Cbegin%7Bbmatrix%7D%5Cboldsymbol%7BP%7D_%7Ba%2Ck%7Ck%7D%260%5C%5C0%26%5Cboldsymbol%7BQ%7D%5Cend%7Bbmatrix%7D)
 
-![](https://latex.codecogs.com/gif.latex?%5Cmathcal%7BX%7D_%7Ba%2Ck%7Ck%7D%3D%5Cbegin%7Bbmatrix%7D%0D%0Ax_%7Ba%2Ck%7Ck%7D%26x_%7Ba%2Ck%7Ck%7D%2B%5Csqrt%7B%28%5Clambda%2Bn_%7Ba%7D%29%5Cmathbf%7BP%7D_%7Ba%2Ck%7Ck%7D%29%7D%26x_%7Ba%2Ck%7Ck%7D-%5Csqrt%7B%28%5Clambda%2Bn_%7Ba%7D%29%5Cmathbf%7BP%7D_%7Ba%2Ck%7Ck%7D%29%7D%0D%0A%5Cend%7Bbmatrix%7D)
+![](https://latex.codecogs.com/gif.latex?%5Cmathcal%7BX%7D_%7Ba%2Ck%7Ck%7D%3D%5Cbegin%7Bbmatrix%7D%0D%0Ax_%7Ba%2Ck%7Ck%7D%26x_%7Ba%2Ck%7Ck%7D%2B%5Csqrt%7B%28%5Clambda%2Bn_%7Ba%7D%29%5Cboldsymbol%7BP%7D_%7Ba%2Ck%7Ck%7D%29%7D%26x_%7Ba%2Ck%7Ck%7D-%5Csqrt%7B%28%5Clambda%2Bn_%7Ba%7D%29%5Cboldsymbol%7BP%7D_%7Ba%2Ck%7Ck%7D%29%7D%0D%0A%5Cend%7Bbmatrix%7D)
 
 where
 
@@ -83,7 +83,7 @@ Note: number of sigma points, ![](https://latex.codecogs.com/gif.latex?n_{\sigma
 
 **Unscented Kalman Filter - Measurement Prediction**
 
-![](https://latex.codecogs.com/gif.latex?\mathcal{Z}_{k+1|k}=h(\mathcal{X}_{k+1|k})+\mathbf{\omega})
+![](https://latex.codecogs.com/gif.latex?\mathcal{Z}_{k+1|k}=h(\mathcal{X}_{k+1|k})+\boldsymbol{\omega})
 
 Predicted measurement mean
 
@@ -95,6 +95,6 @@ Predicted measurement covariance
 
 where 
 
-![](https://latex.codecogs.com/gif.latex?%5Cboldsymbol%7BR%7D%3D%5Cbegin%7Bpmatrix%7D%5Csigma_%7B%5Crho%7D%5E%7B2%7D%260%260%5C%5C0%26%5Csigma_%7B%5Cvarphi%7D%5E%7B2%7D%260%5C%5C0%260%26+%5Csigma_%7B%5Cdot%7B%5Crho%7D%7D%5E%7B2%7D%5Cend%7Bpmatrix%7D)
+![](https://latex.codecogs.com/gif.latex?%5Cboldsymbol%7BR%7D%3D%5Cbegin%7Bpmatrix%7D%5Csigma_%7B%5Crho%7D%5E%7B2%7D%260%260%5C%5C0%26%5Csigma_%7B%5Cvarphi%7D%5E%7B2%7D%260%5C%5C0%260%26%5Csigma_%7B%5Cdot%7B%5Crho%7D%7D%5E%7B2%7D%5Cend%7Bpmatrix%7D)
 
 
