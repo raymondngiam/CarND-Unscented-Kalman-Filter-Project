@@ -95,7 +95,28 @@ Predicted measurement covariance
 
 ![](https://latex.codecogs.com/gif.latex?\boldsymbol{S}_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}(\mathcal{Z}_{k+1|k}-z_{k+1|k})(\mathcal{Z}_{k+1|k}-z_{k+1|k})^{T}+\boldsymbol{R})
 
-where 
+**Unscented Kalman Filter - Update**
+
+Cross-correlation matrix
+
+![](https://latex.codecogs.com/gif.latex?\boldsymbol{T}_{k+1|k}=\sum_{i=0}^{n_{\sigma}}w_{i}(\mathcal{X}_{k+1|k}-x_{k+1|k})(\mathcal{Z}_{k+1|k}-z_{k+1|k})^{T})
+
+Kalman gain
+
+![](https://latex.codecogs.com/gif.latex?\boldsymbol{K}_{k+1|k}=\boldsymbol{T}_{k+1|k}\boldsymbol{S}_{k+1|k}^{-1})
+
+State update
+
+![](https://latex.codecogs.com/gif.latex?x_{k+1|k}=x_{k+1|k}+\boldsymbol{K}_{k+1|k}(z_{k+1}-z_{k+1|k}))
+
+Covariance matrix update
+
+![](https://latex.codecogs.com/gif.latex?\boldsymbol{P}_{k+1|k+1}=\boldsymbol{P}_{k+1|k}-\boldsymbol{K}_{k+1|k}\boldsymbol{S}_{k+1|k}\boldsymbol{K}_{k+1|k}^{T})
+
+
+
+
+
 
 
 
