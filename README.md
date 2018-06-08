@@ -3,7 +3,7 @@
 
 ### Overview
 
-This is a project for Udacity's Self Driving Car Nanodegree. The objective is to utilize a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. In contrast to a [previous project](https://github.com/raymondngiam/CarND-Extended-Kalman-Filter-Project) which uses extended Kalman filter with a constant velocity motion model, this project implements an unscented Kalman filter using the constant turn rate and velocity (CTRV) motion model.
+This is a project for Udacity's Self Driving Car Nanodegree. The objective is to utilize a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. In contrast to a [previous project](https://github.com/raymondngiam/CarND-Extended-Kalman-Filter-Project) which uses extended Kalman filter with a constant velocity (CV) motion model, this project implements an unscented Kalman filter using the constant turn rate and velocity (CTRV) motion model.
 
 ---
 
@@ -33,9 +33,11 @@ where ![](https://latex.codecogs.com/gif.latex?\mathbf{x}) is the state vector a
 
 ![](https://latex.codecogs.com/gif.latex?%5Cmathbf%7B%5Cnu%7D%3D%5Cbegin%7Bpmatrix%7D%5Cnu_%7Ba%7D%5C%5C%5Cnu_%7B%5Cddot%7B%5Cpsi%7D%7D%5Cend%7Bpmatrix%7D)
 
-and
+![](https://latex.codecogs.com/gif.latex?\nu_{a}) is the longitudinal acceleration noise, and is normally distributed with mean zero and variance ![](https://latex.codecogs.com/gif.latex?\sigma_{a}^{2})
 
 ![](https://latex.codecogs.com/gif.latex?\nu_{a}\sim&space;\mathcal{N}(0,\sigma_{a}^{2}))
+
+![](https://latex.codecogs.com/gif.latex?\ddot{\psi}) is the yaw acceleration noise, and is normally distributed with mean zero and variance ![](https://latex.codecogs.com/gif.latex?\sigma_{\ddot{\psi}}^{2})
 
 ![](https://latex.codecogs.com/gif.latex?\nu_{\ddot{\psi}}\sim&space;\mathcal{N}(0,\sigma_{\ddot{\psi}}^{2})))
 
