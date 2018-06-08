@@ -9,7 +9,7 @@ This is a project for Udacity's Self Driving Car Nanodegree. The objective is to
 
 ### Video Demo
 
-<img src="/images/small.gif" width="500">
+<img src="/images/small.gif" width="600">
 
 Lidar measurements are red circles, radar measurements are blue circles with an arrow pointing in the direction of the observed angle, and estimation markers are green triangles.
 
