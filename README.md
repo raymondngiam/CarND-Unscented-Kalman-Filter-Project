@@ -9,7 +9,7 @@ This is a project for Udacity's Self Driving Car Nanodegree. The objective is to
 
 ### Video Demo
 
-![Demo](/images/small.gif)
+<img src="/images/small.gif" width="500">
 
 Lidar measurements are red circles, radar measurements are blue circles with an arrow pointing in the direction of the observed angle, and estimation markers are green triangles.
 
@@ -192,6 +192,6 @@ The main program can be built and run by doing the following from the project to
 
 4. make
 
-5. ./ExtendedKF
+5. ./UnscentedKF
 
 Open the simulator, select `Project 1/2: EFK and UKF` and press `Start`.
